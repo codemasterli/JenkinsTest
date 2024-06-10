@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="eXCFrame" default="deploy" basedir="./">
+    <property name="build-lib.dir" location="C:/jenkins/ci-lib"></property>
+    <property name="workspace.dir" location="../jenkins"></property>
+    <property name="target.dir" location="."></property>
+
+    <taskdef name="clxcompile"
+      classname="kr.co.tomatosystem.exbuilder.cikit.build.ant.Compile"
+      classpath="${build-lib.dir}/e6-compiler.jar"
+    />
+
+    <target name="deploy">
+        <clxcompile
+            src="${workspace.dir}"
+            out="${target.dir}/target/clx-build"
+            minify="false"
+            single="false"
+            language="true"
+            main=""
+            relativizelessurl="true"
+        >
+        </clxcompile>
+    </target>
+</project>
