@@ -4,13 +4,78 @@
     <screen std:sid="screen-c174698e" id="default" name="default" width="1024px" height="768px"/>
     <screen std:sid="screen-900beb95" id="tablet" name="tablet" width="500px" height="667px"/>
     <screen std:sid="screen-78108144" id="mobile" name="mobile" width="350px" height="525px"/>
-    <cl:model std:sid="model-36fd3548"/>
-    <cl:appspec/>
+    <cl:model std:sid="model-36fd3548">
+      <cl:dataset std:sid="d-set-b3ee8af4" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b6f29588" name="column1"/>
+          <cl:datacolumn std:sid="d-column-f0e290d5" name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[데이터셋 바인딩]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[선택행 컨텍스트]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[데이터 로우 컨텍스트]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[선택행 컨텍스트]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-1597d84b" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-6b9413c2" name="column1" defaultvalue="데이터맵 바인딩"/>
+          <cl:datacolumn std:sid="d-column-fb83244d" name="column2" defaultvalue="데이터 맵 컨텍스트"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec>
+      <cl:property name="newProperty1" type="string" default="앱속성 바인딩"/>
+    </cl:appspec>
   </head>
   <body std:sid="body-3845bb12">
-    <cl:htmlsnippet std:sid="htmlsnippet-e6a68e92" id="snp1" value="&lt;p>HTML Snippet&lt;/p>">
-      <cl:xylayoutdata std:sid="xyl-data-b6076c1c" top="141px" left="225px" width="379px" height="114px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
-    </cl:htmlsnippet>
+    <cl:output std:sid="output-179a59aa">
+      <cl:datasetbind property="value" datacontrolid="ds1" columnname="column1" rowindex="0"/>
+      <cl:xylayoutdata std:sid="xyl-data-6d7e1b9e" top="42px" left="101px" width="766px" height="79px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-8a6dc408">
+      <cl:datamapbind property="value" datacontrolid="dm1" columnname="column1"/>
+      <cl:xylayoutdata std:sid="xyl-data-1be7099d" top="131px" left="101px" width="766px" height="79px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-39aacc5e" value="Output">
+      <cl:apppropbind property="value" app-property="newProperty1"/>
+      <cl:xylayoutdata std:sid="xyl-data-a8a763ea" top="236px" left="101px" width="766px" height="79px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-b20d74a8" value="Output">
+      <cl:langbind property="value" keypath="greeting"/>
+      <cl:xylayoutdata std:sid="xyl-data-003a52a1" top="336px" left="101px" width="766px" height="79px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-8291ca20">
+      <cl:relativebind property="value" category="PROPERTY" columnname="column1"/>
+      <cl:datarowcontext datacontrolid="ds1" rowindex="1"/>
+      <cl:xylayoutdata std:sid="xyl-data-86f32bc7" top="460px" left="101px" width="766px" height="79px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-486ac61e">
+      <cl:relativebind property="value" columnname="column2"/>
+      <cl:datamapcontext datacontrolid="dm1"/>
+      <cl:xylayoutdata std:sid="xyl-data-68509a27" top="564px" left="101px" width="766px" height="79px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-aba5bc82">
+      <cl:relativebind property="value" category="PROPERTY" columnname="column2"/>
+      <cl:selectioncontext selectionProvider="grd1"/>
+      <cl:xylayoutdata std:sid="xyl-data-50add181" top="669px" left="95px" width="766px" height="79px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:grid std:sid="grid-2c8e7048" id="grd1" datasetid="ds1">
+      <cl:xylayoutdata std:sid="xyl-data-95bda19f" top="782px" left="87px" width="793px" height="205px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-23e371a6"/>
+      <cl:gridheader std:sid="gh-band-569d22c8">
+        <cl:gridrow std:sid="g-row-085e2251"/>
+        <cl:gridcell std:sid="gh-cell-23348505" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="column1"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-510b7a70">
+        <cl:gridrow std:sid="g-row-7f1aba43"/>
+        <cl:gridcell std:sid="gd-cell-a64491aa" rowindex="0" colindex="0" columnname="column1"/>
+      </cl:griddetail>
+    </cl:grid>
     <cl:xylayout std:sid="xylayout-34521bba"/>
   </body>
   <std:studiosetting>
