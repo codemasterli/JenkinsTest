@@ -604,7 +604,7 @@
           </cl:group>
           <cl:group std:sid="group-2bc66194" id="grp4" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#a0a0a0; border-right-width:1px; border-left-color:#a0a0a0; border-right-color:#a0a0a0; border-left-width:1px; border-top-style:solid; border-radius:30px; border-left-style:solid; border-bottom-width:1px; border-top-color:#a0a0a0; border-bottom-style:solid;">
             <cl:formdata std:sid="f-data-bae68ffd" row="0" col="5"/>
-            <cl:output std:sid="output-7e94c26b" style="font-weight:bold; font-size:12px; text-align:center;" value="실행금액">
+            <cl:output std:sid="output-7e94c26b" style="font-weight:bold; font-size:12px; text-align:center;" value="실행금액2">
               <cl:formdata std:sid="f-data-0dd673f7" row="0" col="0"/>
             </cl:output>
             <cl:formlayout std:sid="f-layout-30e1938c" scrollable="false" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
