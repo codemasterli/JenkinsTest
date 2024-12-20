@@ -91,16 +91,16 @@
         </cl:datacolumnlist>
         <cl:datarowlist>
           <cl:datarow>
-            <cl:datavalue columnname="test"><![CDATA[국내]]></cl:datavalue>
-            <cl:datavalue columnname="pjt_nm"><![CDATA[진성아이엔디(바이크뱅크)]]></cl:datavalue>
+            <cl:datavalue columnname="test">국내</cl:datavalue>
+            <cl:datavalue columnname="pjt_nm">진성아이엔디(바이크뱅크)</cl:datavalue>
           </cl:datarow>
           <cl:datarow>
-            <cl:datavalue columnname="test"><![CDATA[국내2]]></cl:datavalue>
-            <cl:datavalue columnname="pjt_nm"><![CDATA[테스트프로젝트]]></cl:datavalue>
+            <cl:datavalue columnname="test">국내2</cl:datavalue>
+            <cl:datavalue columnname="pjt_nm">테스트프로젝트</cl:datavalue>
           </cl:datarow>
           <cl:datarow>
-            <cl:datavalue columnname="test"><![CDATA[국내3]]></cl:datavalue>
-            <cl:datavalue columnname="pjt_nm"><![CDATA[테스트프로젝트3]]></cl:datavalue>
+            <cl:datavalue columnname="test">국내3</cl:datavalue>
+            <cl:datavalue columnname="pjt_nm">테스트프로젝트3</cl:datavalue>
           </cl:datarow>
         </cl:datarowlist>
       </cl:dataset>
@@ -572,7 +572,7 @@
           </cl:tabitem>
         </cl:tabfolder>
         <cl:group std:sid="group-f275a19c" id="grp1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#e3e3e3; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:#e3e3e3; border-top-color:#e3e3e3; border-bottom-style:solid; border-right-color:#e3e3e3; border-left-width:1px; border-top-style:solid;">
-          <cl:selectioncontext selectionProvider="#grid-b8960bb7"/>
+          <cl:selectioncontext selectionProvider="grdPjt"/>
           <cl:formdata std:sid="f-data-4913ac9a" row="1" col="0"/>
           <cl:group std:sid="group-55c03eb9" id="grp2" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#a0a0a0; border-right-width:1px; border-left-color:#a0a0a0; border-right-color:#a0a0a0; border-left-width:1px; border-top-style:solid; border-radius:30px; border-left-style:solid; border-bottom-width:1px; border-top-color:#a0a0a0; border-bottom-style:solid;">
             <cl:formdata std:sid="f-data-53309fcb" row="0" col="1"/>
@@ -633,7 +633,7 @@
             <std:property key="template-uuid" value="156004f6-5d54-40e7-8b77-bd1b39709a46"/>
             <std:property key="template-rev" value="1"/>
           </std:metadata>
-          <cl:selectioncontext selectionProvider="#grid-b8960bb7"/>
+          <cl:selectioncontext selectionProvider="grdPjt"/>
           <cl:formdata std:sid="f-data-f61a1536" row="0" col="0"/>
           <cl:output std:sid="output-95e72ecc" style="border-right-style:solid; padding-top:0px; border-top-width:1px; border-bottom-color:#a0a0a0; color:#a0a0a0; border-right-width:1px; padding-left:0px; border-left-color:#a0a0a0; font-size:10px; padding-bottom:0px; border-right-color:#a0a0a0; border-left-width:1px; border-top-style:solid; background-color:white; border-radius:18px; border-left-style:solid; border-bottom-width:1px; border-top-color:#a0a0a0; border-bottom-style:solid; background-image:none; text-align:center; padding-right:0px;">
             <cl:relativebind property="value" category="PROPERTY" columnname="haaDivdCdNm"/>
